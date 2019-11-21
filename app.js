@@ -10,10 +10,10 @@ function getPost() {
 function addPost() {
     axios
         .post('localhost:9000/post/', {
-            topik : postTopic,
+            topik : "GATAU",
             user_id : '2',
-            title : postTitle,
-            text : postText
+            title : "GATAU JUGA",
+            text : document.getElementById("message").value
         })
         .then()
         .catch(err => console.error(err))
