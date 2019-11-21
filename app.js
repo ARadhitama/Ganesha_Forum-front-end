@@ -16,10 +16,34 @@ function addPost() {
             text : postText
         })
         .then()
-        .catch(err => console.err)
+        .catch(err => console.error(err))
 }
 
 function showPost(res) {
+
+}
+
+function deletePost(id_post) {
+    axios
+        .delete('localhost:9000/post' + id_post)
+        .then()
+        .catch(err => console.err(err))
+}
+
+function addLikes(id_post) {
+    axios
+        .put('local:9000/post/like' + id_post)
+        .then()
+        .catch(err => console.err(err))
+}
+
+function filterPost(topik) {
+    axios
+        .get('localhost:9000/filter', {
+            "topik": topik
+        })
+        .then()
+        .catch(err => console.err(err))
 
 }
 
