@@ -57,3 +57,7 @@ function performNewPost (e) {
 /**** EVENT LISTENER ****/ 
 
 document.getElementById('').addEventListener('submit', performNewPost);
+document.getElementById('').addEventListener('click', addPost);
+document.getElementById('').addEventListener('click', deletePost);
+document.getElementById('').addEventListener('click', addLikes);
+document.getElementById('').addEventListener('submit', filterPost);
